@@ -1,100 +1,149 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- meta http-equiv="X-Frame-Options" content="deny" -->
-    <title>My 100th Webpage </title>
 
-    <!-- Stylesheets, you can have more than one. -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css"/>
-    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
-    <link id='testcss' type="text/css" rel="stylesheet" href="testing.css">
-    
-    <!-- Javascript, you can have more than one. -->
-    <script src='wireframe.js'></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- meta http-equiv="X-Frame-Options" content="deny" -->
+  <title>My 100th Webpage </title>
 
-  </head>
+  <!-- Stylesheets, you can have more than one. -->
+  <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css" />
+  <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
+  <link id='testcss' type="text/css" rel="stylesheet" href="testing.css">
 
-  <body>
+  <!-- Javascript, you can have more than one. -->
+  <script src='wireframe.js'></script>
 
-    <header>
-      <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
-      <div><img src='../media/RMIT-Logo.png' alt='RMIT University logo' height=80 />Quinn Goh
+</head>
+
+<body>
+
+  <header>
+    <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
+    <div><img src='../media/RMIT-Logo.png' alt='RMIT University logo' height=80 />Quinn Goh
+    </div>
+  </header>
+
+  <nav>
+    Assignments:
+    <!-- link locations: relative to current directory -->
+    <ul>
+      <li><a href="a2/index.php" target="_blank">A2</a></li>
+      <li><a href="a3/index.php" target="_blank">A3</a></li>
+      <li><a href="a4/index.php" target="_blank">A4</a></li>
+    </ul> |
+    <!-- link locations: relative to e54061's public_html directory -->
+    <a href="/~e54061/wp/lectures" target="_blank">Lectures 0 - 11</a> |
+    <a href="/~e54061/secure" target="_blank">Secure Resources Area</a> |
+    <!-- link location: external -->
+    <a href='https://drive.google.com/open?id=1uSRn6PHDcpsUtmFQ6MPMM-g2go4o22VP' target="_blank">WPOUA-Public</a>
+  </nav>
+
+  <main>
+    <article id='about-me'>
+      <h2>About me</h2>
+      <p>
+        <img src='../media/my-picture.jpg' width='200' alt='my photo' />
+      </p>
+      <section id="more-about-me">
+        <div>Who is your tutor / instructor</div>
+        <div>Trevor Reynolds</div>
+
+        <div>Who is your labber / workshopper</div>
+        <div>Trevor Reynolds</div>
+
+        <div>Have you any programming or web design experience?</div>
+        <div>Yes I have. Well, I like to think so ...</div>
+
+        <div>Do you see yourself as a programmer or designer, or both?</div>
+        <div>I am more of a designer by nature, however, I strive to develop more programming experience. </div>
+
+        <div>What has brought you to this course at RMIT?</div>
+        <div>It is part of my Bachelor Of Information & Technology</div>
+
+        <div>What are you hoping to get out of the course?</div>
+        <div>Develop more hard skills pertaining to website developemnt.</div>
+
+        <div>What websites do you use the most? (NB: "family friendly" !)</div>
+        <div>I mainly interact with news and media outlet sites. I particularly loke the layout and design of Vice News.
+        </div>
+
+        <div>Do you have any interests or hobbies?</div>
+        <div>I am passionate about all things to do with vintage BMW's - the cars themselves and the consequential
+          lifestyle from owning one.</div>
+      </section>
+    </article>
+    <aside>
+      <div>
+        <H1> No depracated code to be found</H1>
       </div>
-    </header>
+    </aside>
+    <article id='project'>
 
-    <nav>
-      Assignments:
-      <!-- link locations: relative to current directory -->
+      <h3><strong>What is currently being done well</strong></h3>
+      <p>With regards to the sites usability, it achieves a few industry standard Benchmarks for navigation, page
+        design, content placement and an understanding of audience. </p>
       <ul>
-        <li><a href="a2/index.php" target="_blank">A2</a></li>
-        <li><a href="a3/index.php" target="_blank">A3</a></li>
-        <li><a href="a4/index.php" target="_blank">A4</a></li>
-      </ul> |
-      <!-- link locations: relative to e54061's public_html directory -->
-      <a href="/~e54061/wp/lectures" target="_blank">Lectures 0 - 11</a> |
-      <a href="/~e54061/secure" target="_blank">Secure Resources Area</a> | 
-      <!-- link location: external -->
-      <a href='https://drive.google.com/open?id=1uSRn6PHDcpsUtmFQ6MPMM-g2go4o22VP' target="_blank">WPOUA-Public</a>
-    </nav>
+        <li>Navigation: The website successfully implemented a site map, and search facility based on keywords.
+          Furthermore there is a functioning navigation bar implemented as a table utilising the &lt;td&gt; and
+          &lt;th&gt; elements. (Figure 1)</li>
+        <li>Page Design: There is the successful implementation of a photo, as a logo, in the header of the site
+          utilising the &lt;img&gt; element - providing brand and identity to the website. (Figure 1) Moreover, it
+          should also be noted that the site effectively implements meta tags and alt tags. It also utilises a footer
+          and header effectively. </li>
+        <li>Content Placement: The copy, at least for the &lsquo; above the line&rsquo; content on the landing page, was
+          centred appropriately utilising a division tag with the appropriate use of margins, floats and inline
+          properties to organise the text. (Figure 1)</li>
+        <li>Understanding of audience: The content would, in all likelihood, be of more interest to an academic or older
+          community. With that in mind, the lack of graphics and visual stimulus illustrates an understanding of
+          audience. The user&rsquo;s visit the site for the unique information it holds - and don&rsquo;t care for how
+          it is delivered.</li>
+      </ul>
+      <p><strong><img src="https://titan.csit.rmit.edu.au/~s3724287/media/figure-one.png" alt="figure one" width="630"
+            height="276" /></strong>(Figure One)<br /></p>
+      <h3><strong>What is currently not being done well</strong></h3>
+      <p>Although the site achieved some basic benchmarks, by enlarge it lacks effective consideration of Human Computer
+        Interaction in all of the areas previously listed besides understanding of audience: navigation, page design,
+        content placement.</p>
+      <ul>
+        <li>Navigation: Although there is a navigation menu, sub menus like the Letters &amp; Post Cards page does not
+          contain any indication of which page you are on. This could be resolved with a sub class from the CSS utilised
+          to highlight which page you are on in the main navigation (figure 2)</li>
+        <li>Page Design: To be frank, the design is dated and disengaging - with a lack of images and graphics to draw a
+          broader audience beyond the academic and elderly community. Moreover, the use of colour, although contrasting,
+          is also very dated.&nbsp;</li>
+        <li>Content Placement: Although some pages are formatted correctly, most aren&rsquo;t. For example, the
+          Introduction page utilises a &lt;span&gt; tag instead of a simple &lt;ul&gt; lag.</li>
+        <li>Not Mobile friendly whatsoever, for example the graphics don't scale and the hamburger menu in non-reactive.
+          (figure 3)</li>
+      </ul>
+      <p><img src="https://titan.csit.rmit.edu.au/~s3724287/media/figure-two.png" alt="figure-two" width="366"
+          height="214" /><img src="https://titan.csit.rmit.edu.au/~s3724287/media/figure-three.png" alt="" width="98"
+          height="212" /></p>
+      <p>(Figure Two) / (Figure Three)</p>
+      <h3><strong>Redevelopment proposal</strong></h3>
+      <ul>
+        <li>Develop CSS to help mitigate issues with indications, formatting for specific sections, logo spacing and
+          scale etc. </li>
+        <li>Modernise colour scheme and logo. </li>
+        <li>Fix navigation features in sub-menus - maybe include them in the main navigation in the header. </li>
+        <li>Re-orientate copy to make sure the above the line content engages audiences further. </li>
+        <li>Implement more graphics, photos and multimedia</li>
+      </ul>
 
-    <main>
-      <article id='about-me'>
-        <h2>About me</h2>
-        <p>
-          <img src='../media/my-picture.jpg' width='200' alt='my photo' />
-        </p>
-        <section id="more-about-me">
-          <div>Who is your tutor / instructor</div>
-          <div>Trevor Reynolds</div>
+    </article>
+  </main>
 
-          <div>Who is your labber / workshopper</div>
-          <div>Trevor Reynolds</div>
+  <footer>
+    &copy; Quinn Goh
+    <script>
+      document.write(new Date().getFullYear());
+    </script>.
+    Put footer info and other <a href=' '>secondary links</a> here (but only if you wish to). <button
+      id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
+  </footer>
 
-          <div>Have you any programming or web design experience?</div>
-          <div>Yes I have. Well, I like to think so ...</div>
+</body>
 
-          <div>Do you see yourself as a programmer or designer, or both?</div>
-          <div>I am more of a designer by nature, however, I strive to develop more programming experience. </div>
-
-          <div>What has brought you to this course at RMIT?</div>
-          <div>It is part of my Bachelor Of Information & Technology</div>
-
-          <div>What are you hoping to get out of the course?</div>
-          <div>Develop more hard skills pertaining to website developemnt.</div>
-
-          <div>What websites do you use the most? (NB: "family friendly" !)</div>
-          <div>I mainly interact with news and media outlet sites. I particularly loke the layout and design of Vice News. </div>
-
-          <div>Do you have any interests or hobbies?</div>
-          <div>I am passionate about all things to do with vintage BMW's - the cars themselves and the consequential lifestyle from owning one.</div>
-        </section>
-      </article>
-      <aside>
-        <div> <H1> No depracated code to be found</H1> </div>
-      </aside>
-      <article id='project'>
-
-        <h3 class="p1"><strong><span class="s1">WHAT IT DOES RIGHT</span></strong></h3>
-        <p class="p1"><span class="s1">With regards to the sites usability, it achieves a few industry standard Benchmarks for navigation, page design, content placement and an understanding of audience. </span></p>
-        <ul class="ul1">
-        <li class="li1"><span class="s1"><strong>Navigation</strong>: The website successfully implemented a site map, and search facility based on keywords. Furthermore there is a functioning navigation bar implemented as a table utilising the &lt;td&gt; and &lt;th&gt; elements. (Figure 1)</span></li>
-        <li class="li1"><span class="s1"><strong>Page Design</strong>: There is the successful implementation of a photo, as a logo, in the header of the site utilising the &lt;img&gt; element</span> <span class="s1">- providing brand and identity to the website. (Figure 1)</span></li>
-        <li class="li1"><span class="s1"><strong>Content Placement</strong>: The copy, at least for the &lsquo; above the line&rsquo; content on the landing page, was centred appropriately utilising a division tag with the appropriate use of margins, floats and inline properties to organise the text. (Figure 1)</span></li>
-        <li class="li1"><span class="s1"><strong>Understanding of audience</strong>: The content would, in all likelihood, be of more interest to an academic or older community. With that in mind, the lack of graphics and visual stimulus illustrates an understanding of audience. The user&rsquo;s visit the site for the unique information it holds - and don&rsquo;t care for how it is delivered. </span></li>
-        </ul> 
-
-      </article>
-    </main>
-
-    <footer>
-      &copy; Quinn Goh
-      <script>
-        document.write(new Date().getFullYear());
-      </script>.
-      Put footer info and other <a href=' '>secondary links</a> here (but only if you wish to). <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
-    </footer>
-    
-  </body>
 </html>
