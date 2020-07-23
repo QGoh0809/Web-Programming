@@ -15,7 +15,7 @@
       <header id="nav" class="sticky-nav">
          <nav class="container">
             <ul role="list" class="nav-grid-2 w-list-unstyled">
-               <li id="home-nav"><a href="#" class="nav-logo-link w-inline-block"><img src='../nav-logo.png'  sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 282.640625px" alt="" class="nav-logo"></a></li>
+               <li id="home-nav"><a href="#" class="nav-logo-link w-inline-block"><img src='../media/nav-logo.png'  sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 282.640625px" alt="" class="nav-logo"></a></li>
                <li><a href="#" class="nav-link">Letters</a></li>
                <li><a href="#" class="nav-link">Postcards</a></li>
                <li><a href="#" class="nav-link">Description</a></li>
@@ -36,7 +36,7 @@
       <main>
          <section class="feature-section-2">
             <div class="flex-container container">
-               <div class="feature-image-mask"><img src='../baker-profile.png' width="391" height="" alt="Douglas-Raymond-Baker" class="feature-image"></div>
+               <div class="feature-image-mask"><img src='../media/baker-profile.png' width="391" height="" alt="Douglas-Raymond-Baker" class="feature-image"></div>
                <div>
                   <h2>Introduction<br></h2>
                   <p>These are copies of letters written by my father Douglas Raymond Baker during the First World War (1914-1918) to his family in Gympie. I have three thick exercise books in which the letters were copied in hand writing by my Aunt Alice, his sister. I understand that this was done so his letters could be sent on to other members of the family. I don’t know if the originals are still in existence, probably not.<br><br>In the early letters Alice has not included the name of the person they were written to but later she writes at the beginning, “Letter to Dot”,  “Letter to Mother”, etc. and later still copies the original, “Dear Al”, “Dear Mag”, etc..  Likewise the endings are often not laid out fully as we would do but Al may have done this or Dad may have been saving space on the page.</p>
