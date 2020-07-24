@@ -91,9 +91,6 @@
                   <li><a href="#" class="footer-link">Site Map</a></li>
                </ul>
             </div>
-            <div>
-</div>
-</div>
          </div>
          <div>
             &copy;<script>
