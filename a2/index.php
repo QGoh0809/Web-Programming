@@ -12,12 +12,11 @@
       <script src='../wireframe.js'></script>
    </head>
    <body>
-      <header id="nav" class="sticky-nav">
+  <header id="nav" class="sticky-nav">
          <nav class="container">
             <ul role="list" class="nav-grid-2 w-list-unstyled">
                <li id="home-nav"><a href="#" class="nav-logo-link w-inline-block"><img src='../a2/media/nav-logo.png'  sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 282.640625px" alt="" class="nav-logo"></a></li>
-               <li><a href="#" class="nav-link">Letters</a></li>
-               <li><a href="#" class="nav-link">Postcards</a></li>
+               <li><a href="postcards.php" class="nav-link">Postcards & Letters</a></li>
                <li><a href="#" class="nav-link">Description</a></li>
                <li><a href="index.php" class="nav-link">Home</a></li>
                <li id="main-nav" class="nav-link"></li>
@@ -31,8 +30,6 @@
             <div><a href="#" class="button-3 w-button">Letters and postcards</a></div>
          </div>
       </header>
-      
-      
       <main>
          <section class="feature-section-2">
             <div class="flex-container container">
@@ -85,7 +82,7 @@
           <ul role="list" class="w-list-unstyled">
             <li><a href="#" class="footer-link">Realted Material</a></li>
             <li><a href="#" class="footer-link">Get In Touch</a></li>
-            <li><a href="#" class="footer-link">Letters and Postcards</a></li>
+            <li><a href="postcards.php" class="footer-link">Letters and Postcards</a></li>
             <li><a href="#" class="footer-link">Description</a></li>
             <li><a href="#" class="footer-link">Site Map</a></li>
           </ul>
