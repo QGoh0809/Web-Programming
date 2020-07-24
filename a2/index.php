@@ -48,7 +48,7 @@
           </section>
           <section class="feature-section-3">
           <div class="centered-container-2 container">
-          <h1 class="heading-3">Places Visited</h1>
+          <h1 class="heading-3">Some Places Visited</h1>
           <br/>
           <div id="map">
           </div>
