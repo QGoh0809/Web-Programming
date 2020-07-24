@@ -18,7 +18,7 @@
             <ul role="list" class="nav-grid-2 w-list-unstyled">
                <li id="home-nav"><a href="#" class="nav-logo-link w-inline-block"><img src='../a2/media/nav-logo.png'  sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 282.640625px" alt="" class="nav-logo"></a></li>
                <li><a href="postcards.php" class="nav-link">Letters & Postcards</a></li>
-               <li><a href="#" class="nav-link">Description</a></li>
+               <li><a href="descriptions.php" class="nav-link">Description</a></li>
                <li><a href="index.php" class="nav-link">Home</a></li>
                <li id="main-nav" class="nav-link"></li>
             </ul>
@@ -80,7 +80,7 @@
          <div class="w-container">
          <div class="footer-flex-container">
             <a href="index.php" class="footer-logo-link w-inline-block"><img src="../a2/media/nav-logo.png" alt="logo" class="footer-image"></a>
-            <div>
+            <div class="footer-flex-container>
                <h2 class="footer-heading">NAVIGATION</h2>
                <ul role="list" class="w-list-unstyled">
                   <li><a href="https://www.sites.google.com/site/anzacdouglasraymondbaker/link-to-related-material" class="footer-link">Realted Material</a></li>
@@ -90,6 +90,9 @@
                   <li><a href="#" class="footer-link">Site Map</a></li>
                </ul>
             </div>
+            <div>
+</div>
+</div>
          </div>
          <div>
             &copy;<script>
