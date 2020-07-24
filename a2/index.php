@@ -76,33 +76,28 @@
          </div>
       </div>
     
-    <footer id="footer" class="footer">
-    <div class="w-container">
-      <div class="footer-flex-container"><a href="index.php" class="footer-logo-link w-inline-block"><img src="../a2/media/nav-logo.png" alt="" class="footer-image"></a>
-        <div>
-          <h2 class="footer-heading">Navigation</h2>
-          <ul role="list" class="w-list-unstyled">
-            <li><a href="#" class="footer-link">Realted Material</a></li>
-            <li><a href="#" class="footer-link">Get In Touch</a></li>
-            <li><a href="postcards.php" class="footer-link">Letters and Postcards</a></li>
-            <li><a href="#" class="footer-link">Description</a></li>
-            <li><a href="#" class="footer-link">Site Map</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="footer-heading">Contact Details</h2>
-          <ul role="list" class="w-list-unstyled">
-            <li><a href="mailto:ibak6837@bigpond.net.au" class="footer-link">ibak6837@bigpond.net.au</a></li>
-          </ul>
-        </div>
-      </div>
-          <div>
+      <footer id="footer" class="footer">
+         <div class="w-container">
+         <div class="footer-flex-container">
+            <a href="index.php" class="footer-logo-link w-inline-block"><img src="../a2/media/nav-logo.png" alt="logo" class="footer-image"></a>
+            <div>
+               <h2 class="footer-heading">NAVIGATION</h2>
+               <ul role="list" class="w-list-unstyled">
+                  <li><a href="https://www.sites.google.com/site/anzacdouglasraymondbaker/link-to-related-material" class="footer-link">Realted Material</a></li>
+                  <li><a href="mailto:ibak6837@bigpond.net.au" class="footer-link">Get In Touch</a></li>
+                  <li><a href="postcards.php" class="footer-link">Letters and Postcards</a></li>
+                  <li><a href="description.php" class="footer-link">Description</a></li>
+                  <li><a href="#" class="footer-link">Site Map</a></li>
+               </ul>
+            </div>
+         </div>
+         <div>
             &copy;<script>
                document.write(new Date().getFullYear());
-            </script> Put your name(s), student number(s) and group name here. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.
+            </script> Quinn Goh, S3724287. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.
          </div>
          <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
          <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-    </footer>
+      </footer>
    </body>
 </html>
