@@ -28,7 +28,9 @@
       
       <section class="feature-section-2">
           <div class="centered-container-2 container">
-          <h1 class="heading-3">Letters & Postcards</h1>
+          <h1 class="heading-3">Letters & Postcards</h1> 
+          <br/>
+          <p>Click on a tab to reveal the descriptions.</p>
           <br/>
             <div class="tab">
                <button class="tablinks" onclick="openTab(event, '1914')">1914</button>
@@ -76,8 +78,10 @@
       <footer id="footer" class="footer">
          <div class="w-container">
          <div class="footer-flex-container">
+            <a href="index.php" class="footer-logo-link w-inline-block"><img src="../a2/media/nav-logo.png" alt="logo" class="footer-image"></a>
+            <div class="footer-flex-container>
                <h2 class="footer-heading">NAVIGATION</h2>
-               <ul role="list">
+               <ul role="list" class="w-list-unstyled">
                   <li><a href="https://www.sites.google.com/site/anzacdouglasraymondbaker/link-to-related-material" class="footer-link">Realted Material</a></li>
                   <li><a href="mailto:ibak6837@bigpond.net.au" class="footer-link">Get In Touch</a></li>
                   <li><a href="postcards.php" class="footer-link">Letters and Postcards</a></li>
@@ -85,6 +89,9 @@
                   <li><a href="#" class="footer-link">Site Map</a></li>
                </ul>
             </div>
+            <div>
+</div>
+</div>
          </div>
          <div>
             &copy;<script>
