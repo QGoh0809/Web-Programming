@@ -83,8 +83,6 @@
       <footer id="footer" class="footer">
          <div class="w-container">
          <div class="footer-flex-container">
-            <a href="index.php" class="footer-logo-link w-inline-block"><img src="../a2/media/nav-logo.png" alt="logo" class="footer-image"></a>
-            <div class="footer-flex-container">
                <ul role="list" class="w-list-unstyled">
                   <li><a href="https://www.sites.google.com/site/anzacdouglasraymondbaker/link-to-related-material" class="footer-link">Realted Material</a></li>
                   <li><a href="mailto:ibak6837@bigpond.net.au" class="footer-link">Get In Touch</a></li>
@@ -92,7 +90,6 @@
                   <li><a href="description.php" class="footer-link">Description</a></li>
                   <li><a href="#" class="footer-link">Site Map</a></li>
                </ul>
-            </div>
          </div>
          <div>
             &copy;<script>
