@@ -87,7 +87,7 @@
                   <li><a href="https://www.sites.google.com/site/anzacdouglasraymondbaker/link-to-related-material" class="footer-link">Realted Material</a></li>
                   <li><a href="mailto:ibak6837@bigpond.net.au" class="footer-link">Get In Touch</a></li>
                   <li><a href="postcards.php" class="footer-link">Letters and Postcards</a></li>
-                  <li><a href="description.php" class="footer-link">Description</a></li>
+                  <li><a href="descriptions.php" class="footer-link">Description</a></li>
                   <li><a href="#" class="footer-link">Site Map</a></li>
                </ul>
          </div>
