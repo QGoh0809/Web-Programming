@@ -31,33 +31,33 @@
           <h1 class="heading-3">Letters & Postcards</h1>
           <br/>
             <div class="tab">
-               <button class="tablinks" onclick="infoTab(event, '1914')">1914</button>
-               <button class="tablinks" onclick="infoTab(event, '1915')">1915</button>
-               <button class="tablinks" onclick="infoTab(event, '1916')">1916</button>
-               <button class="tablinks" onclick="infoTab(event, '1917')">1917</button>
-               <button class="tablinks" onclick="infoTab(event, '1918')">1918</button>
+               <button class="tablinks" onclick="tabName(event, '1914')">1914</button>
+               <button class="tablinks" onclick="tabName(event, '1915')">1915</button>
+               <button class="tablinks" onclick="tabName(event, '1916')">1916</button>
+               <button class="tablinks" onclick="tabName(event, '1917')">1917</button>
+               <button class="tablinks" onclick="tabName(event, '1918')">1918</button>
             </div>
             <!-- Tab content -->
             <div id="1914" class="tabcontent">
                <h3>1914</h3>
                </br> 
-               <p>London is the capital city of England.</p>
+               <p>Placeholder</p>
             </div>
             <div id="1915" class="tabcontent">
                <h3>1915</h3>
-               <p>Paris is the capital of France.</p>
+               <p>Placeholder.</p>
             </div>
             <div id="1916" class="tabcontent">
                <h3>1916</h3>
-               <p>Tokyo is the capital of Japan.</p>
+               <p>Placeholder.</p>
             </div>
             <div id="1917" class="tabcontent">
                <h3>1917</h3>
-               <p>Tokyo is the capital of Japan.</p>
+               <p>Placeholder.</p>
             </div>
             <div id="1918" class="tabcontent">
                <h3>1918</h3>
-               <p>Tokyo is the capital of Japan.</p>
+               <p>Placeholder.</p>
             </div>
          </div>
       </section>
