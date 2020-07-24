@@ -2,15 +2,16 @@
 <html lang='en'>
    <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Assignment 2</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.">
+      <meta name="author" content="Quinn Goh">
+      <title>Assignment Two</title>
       <!-- Keep wireframe.css for debugging, add your css to style.css -->
       <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-      <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
       <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
       <script type="text/javascript" src="../a2/mapdata.js"></script>		
       <script  type="text/javascript" src="../a2/worldmap.js"></script>
-      <script  type="text/javascript" src="../a2/essential.js"></script> 
+      <script  type="text/javascript" src="../a2/essential.js"></script>
       <script src='../wireframe.js'></script>
    </head>
    <body>
@@ -25,13 +26,17 @@
             </ul>
          </nav>
       </header>
+      <header class="hero-overlay">
+         <div class="centered-container-2 container">
+            <h1 class="heading-3">Letters & Postcards<br></h1>
+            <p class="paragraph-2">
+         </div>
+      </header>
       
       <section class="feature-section-2">
           <div class="centered-container-2 container">
-          <h1 class="heading-3">Letters & Postcards</h1> 
-          <br/>
-          <p>Click on a tab to reveal the descriptions.</p>
-          <br/>
+          <h1 class="heading-3">Click on a tab to reveal a letter or postcard</h1> 
+            <br/>
             <div class="tab">
                <button class="tablinks" onclick="openTab(event, '1914')">1914</button>
                <button class="tablinks" onclick="openTab(event, '1915')">1915</button>
@@ -80,7 +85,6 @@
          <div class="footer-flex-container">
             <a href="index.php" class="footer-logo-link w-inline-block"><img src="../a2/media/nav-logo.png" alt="logo" class="footer-image"></a>
             <div class="footer-flex-container>
-               <h2 class="footer-heading">NAVIGATION</h2>
                <ul role="list" class="w-list-unstyled">
                   <li><a href="https://www.sites.google.com/site/anzacdouglasraymondbaker/link-to-related-material" class="footer-link">Realted Material</a></li>
                   <li><a href="mailto:ibak6837@bigpond.net.au" class="footer-link">Get In Touch</a></li>

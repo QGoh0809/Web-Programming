@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<title>Assignment 2</title><!-- Keep wireframe.css for debugging, add your css to style.css -->
-	<link href="../wireframe.css" id='wireframecss' rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-	<link href="style.css?t=&lt;?= filemtime(" id='stylecss' rel="stylesheet" type="text/css">
-</head>
-<body>
-	"&gt; 
-	<script src="../a2/mapdata.js" type="text/javascript">
-	</script> 
-	<script src="../a2/worldmap.js" type="text/javascript">
-	</script> 
-	<script src="../a2/essential.js" type="text/javascript">
-	</script> 
-	<script src='../wireframe.js'>
-	</script>
-	<header class="sticky-nav" id="nav">
-		<nav class="container">
-			<ul class="nav-grid-2 w-list-unstyled" role="list">
-				<li id="home-nav">
-					<a class="nav-logo-link w-inline-block" href="#"><img alt="" class="nav-logo" sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 282.640625px" src='../a2/media/nav-logo.png'></a>
-				</li>
-				<li>
-					<a class="nav-link" href="postcards.php">Letters & Postcards</a>
-				</li>
-				<li>
-					<a class="nav-link" href="descriptions.php">Description</a>
-				</li>
-				<li>
-					<a class="nav-link" href="index.php">Home</a>
-				</li>
-				<li class="nav-link" id="main-nav"></li>
-			</ul>
-		</nav>
-	</header>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.">
+      <meta name="author" content="Quinn Goh">
+      <title>Assignment Two</title>
+      <!-- Keep wireframe.css for debugging, add your css to style.css -->
+      <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+      <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
+      <script type="text/javascript" src="../a2/mapdata.js"></script>		
+      <script  type="text/javascript" src="../a2/worldmap.js"></script>
+      <script  type="text/javascript" src="../a2/essential.js"></script>
+      <script src='../wireframe.js'></script>
+   </head>
+   <body>
+      <header id="nav" class="sticky-nav">
+         <nav class="container">
+            <ul role="list" class="nav-grid-2 w-list-unstyled">
+               <li id="home-nav"><a href="#" class="nav-logo-link w-inline-block"><img src='../a2/media/nav-logo.png'  sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 282.640625px" alt="" class="nav-logo"></a></li>
+               <li><a href="postcards.php" class="nav-link">Letters & Postcards</a></li>
+               <li><a href="descriptions.php" class="nav-link">Description</a></li>
+               <li><a href="index.php" class="nav-link">Home</a></li>
+               <li id="main-nav" class="nav-link"></li>
+            </ul>
+         </nav>
+      </header>
+
+    <header class="hero-overlay">
+         <div class="centered-container-2 container">
+            <h1 class="heading-3">Descriptions of Battle Action<br></h1>
+            <p class="paragraph-2">
+         </div>
+      </header>
 	<section class="feature-section-2">
 		<div class="centered-container-2 container">
-            <h1 class="heading-3">Descriptions of Battle Action</h1><br>
-            <p>Click on a tab to reveal the descriptions.</p>
-            <br/>
+            <h1 class="heading-3">Click on a tab to reveal a battle description.</h1><br>
 			<div class="tab">
 				<button class="tablinks" onclick="openTab(event, 'gallipoli')">An Account of the Gallipoli Landing.</button> <button class="tablinks" onclick="openTab(event, 'push')">The "Big Push"</button> <button class="tablinks" onclick="openTab(event, 'poziers')">Battle of Poziers</button> <button class="tablinks" onclick="openTab(event, 'wounded')">Getting Wounded, Again</button> <button class="tablinks" onclick="openTab(event, 'nedal')">What it Takes to Win a Military Medal</button>
 			</div><!-- Tab content -->
@@ -71,8 +65,7 @@
          <div class="w-container">
          <div class="footer-flex-container">
             <a href="index.php" class="footer-logo-link w-inline-block"><img src="../a2/media/nav-logo.png" alt="logo" class="footer-image"></a>
-            <div class="footer-flex-container>
-               <h2 class="footer-heading">NAVIGATION</h2>
+            <div class="footer-flex-container">
                <ul role="list" class="w-list-unstyled">
                   <li><a href="https://www.sites.google.com/site/anzacdouglasraymondbaker/link-to-related-material" class="footer-link">Realted Material</a></li>
                   <li><a href="mailto:ibak6837@bigpond.net.au" class="footer-link">Get In Touch</a></li>
