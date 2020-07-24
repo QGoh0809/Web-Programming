@@ -9,20 +9,23 @@
       <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
       <script type="text/javascript" src="../a2/mapdata.js"></script>		
       <script  type="text/javascript" src="../a2/worldmap.js"></script>
+      <script  type="text/javascript" src="../a2/essential.js"></script>
       <script src='../wireframe.js'></script>
    </head>
    <body>
-  <header id="nav" class="sticky-nav">
+      <header id="nav" class="sticky-nav">
          <nav class="container">
             <ul role="list" class="nav-grid-2 w-list-unstyled">
                <li id="home-nav"><a href="#" class="nav-logo-link w-inline-block"><img src='../a2/media/nav-logo.png'  sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 282.640625px" alt="" class="nav-logo"></a></li>
-               <li><a href="postcards.php" class="nav-link">Postcards & Letters</a></li>
+               <li><a href="#" class="nav-link">Letters</a></li>
+               <li><a href="#" class="nav-link">Postcards</a></li>
                <li><a href="#" class="nav-link">Description</a></li>
                <li><a href="index.php" class="nav-link">Home</a></li>
                <li id="main-nav" class="nav-link"></li>
             </ul>
          </nav>
       </header>
+      
       <header class="hero-overlay">
          <div class="centered-container-2 container">
             <h1 class="heading-3">ANZAC Douglas Raymond Baker <br>Letters Home</h1>
