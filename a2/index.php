@@ -31,7 +31,7 @@
          <div class="centered-container-2 container">
             <h1 class="heading-3">ANZAC Douglas Raymond Baker <br>Letters Home</h1>
             <p class="paragraph-2">This year is the centenary of the birth of the ANZAC legend. As such, many people, particularly young people, are looking for ways to connect with people of that period and inparticular, those who created the ANZAC legend.<br><br>This site presents the letters of Douglas Raymond Baker, who came from Gympie, Queensland, Australia. He enlisted in August 1914 and during the years that followed, he wrote letters and post cards to his family at home. In them, he describes much of the goings-on of the life of an ANZAC, his feeling and opinions, and experiences while visiting his relatives in England during leave.<br><br>They start from the beginning of basic training in Brisbane in August 1914 and end in May 1918.<br><br>They are offered here so that others may get an understanding of life as an ANZAC and get a sense of what life on the battlefield was like.<br><br>From the menu on the left, read the <em>Introduction </em>to set the scene. Then, to start reading the letters, click on <em>Letter and Post Cards </em>in the button below or from the navigation bar above. </p>
-            <div><a href="index.php" class="button-3 w-button">Letters and postcards</a></div>
+            <div><a href="postcards.php" class="button-3 w-button">Letters and postcards</a></div>
          </div>
       </header>
       <main>
