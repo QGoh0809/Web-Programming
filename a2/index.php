@@ -7,8 +7,8 @@
       <!-- Keep wireframe.css for debugging, add your css to style.css -->
       <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
       <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
-      <script type="text/javascript" src="../mapdata.js"></script>		
-      <script  type="text/javascript" src="../worldmap.js"></script>
+      <script type="text/javascript" src="..a2/mapdata.js"></script>		
+      <script  type="text/javascript" src="..a2/worldmap.js"></script>
       <script src='../wireframe.js'></script>
    </head>
    <body>
@@ -57,12 +57,6 @@
          </section>
         </main>
 
-
-
-
-
-
-
       <div id="id01" class="modal">
          <div class="modal-content">
             <div class="container">
@@ -82,14 +76,34 @@
               </div>
          </div>
       </div>
-      <footer>
-         <div>
+    
+    <footer id="footer" class="footer">
+    <div class="w-container">
+      <div class="footer-flex-container"><a href="index.php" class="footer-logo-link w-inline-block"><img src="../a2/media/nav-logo.png" alt="" class="footer-image"></a>
+        <div>
+          <h2 class="footer-heading">Navigation</h2>
+          <ul role="list" class="w-list-unstyled">
+            <li><a href="#" class="footer-link">Realted Material</a></li>
+            <li><a href="#" class="footer-link">Get In Touch</a></li>
+            <li><a href="#" class="footer-link">Letters and Postcards</a></li>
+            <li><a href="#" class="footer-link">Description</a></li>
+            <li><a href="#" class="footer-link">Site Map</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Contact Details</h2>
+          <ul role="list" class="w-list-unstyled">
+            <li><a href="mailto:ibak6837@bigpond.net.au" class="footer-link">ibak6837@bigpond.net.au</a></li>
+          </ul>
+        </div>
+      </div>
+          <div>
             &copy;<script>
                document.write(new Date().getFullYear());
             </script> Put your name(s), student number(s) and group name here. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.
          </div>
          <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
          <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-      </footer>
+    </footer>
    </body>
 </html>
