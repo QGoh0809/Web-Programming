@@ -1,6 +1,32 @@
-<?php 
-     include 'header.php'; 
-   ?>
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.">
+      <meta name="author" content="Quinn Goh">
+      <title>Assignment Two</title>
+      <!-- Keep wireframe.css for debugging, add your css to style.css -->
+      <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+      <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
+      <script type="text/javascript" src="../a2/mapdata.js"></script>		
+      <script  type="text/javascript" src="../a2/worldmap.js"></script>
+      <script  type="text/javascript" src="../a2/essential.js"></script>
+      <script src='../wireframe.js'></script>
+   </head>
+   <body>
+      <header id="nav" class="sticky-nav">
+         <nav class="container">
+            <ul role="list" class="nav-grid-2 w-list-unstyled">
+               <li id="home-nav"><a href="#" class="nav-logo-link w-inline-block"><img src='../a2/media/nav-logo.png'  sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 282.640625px" alt="nav-logo" class="nav-logo"></a></li>
+               <li><a href="postcards.php" class="nav-link">Letters & Postcards</a></li>
+               <li><a href="descriptions.php" class="nav-link">Description</a></li>
+               <li><a href="contact.php" class="nav-link">Contact</a></li>
+               <li><a href="index.php" class="nav-link">Home</a></li>
+               <li id="main-nav" class="nav-link"></li>
+            </ul>
+         </nav>
+      </header>
 
       <header class="hero-overlay">
          <div class="centered-container-2 container">
@@ -52,24 +78,7 @@
               </div>
          </div>
       </div>   
-      <footer id="footer" class="footer">
-         <div class="w-container">
-         <div class="footer-flex-container">
-               <ul role="list" class="w-list-unstyled">
-                  <li><a href="https://www.sites.google.com/site/anzacdouglasraymondbaker/link-to-related-material" class="footer-link">Realted Material</a></li>
-                  <li><a href="mailto:ibak6837@bigpond.net.au" class="footer-link">Get In Touch</a></li>
-                  <li><a href="postcards.php" class="footer-link">Letters and Postcards</a></li>
-                  <li><a href="descriptions.php" class="footer-link">Description</a></li>
-                  <li><a href="#" class="footer-link">Site Map</a></li>
-               </ul>
-         </div>
-         <div>
-            &copy;<script>
-               document.write(new Date().getFullYear());
-            </script> Quinn Goh, S3724287. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.
-         </div>
-         <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-         <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-      </footer>
-   </body>
-</html>
+      
+      <?php 
+     include 'header.php'; 
+   ?>
