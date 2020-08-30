@@ -96,25 +96,42 @@
 
     }
 
+    save_data($email, $name, $subject, $message);
+
     }
 
-
-
-function save_data()
-{
-
-    $list = array ($name, $number, $email, $subject, $message);
-
-    $file = fopen("../a3/mail.csv","w");
- 
-    fputcsv($file,$list );
-   
-    fclose( $file );
     
 
 
 
+function save_data($email, $name, $subject, $message  )
+{
+
+    $array = array("{$email}, {$name}, {$subject}, {$message}") ;
+                    
+  
+    // opening the file "data.csv" for writing 
+    $file = fopen("../a3/mail.csv","w"); 
+      
+    // formatting each row of data in CSV format  
+    // and outputting it 
+    foreach ($array as $line) 
+    { 
+        fputcsv($file, explode(',', $line)); 
+    } 
+      
+    // closing the file 
+    fclose($file); 
+
+
 }
+
+
+
+// Sample data for formatting in CSV format 
+ 
+
+
 
 
 

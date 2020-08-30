@@ -42,7 +42,7 @@
     <button name="submit" type="submit" id="contact-submit" data-submit="....sending">Submit</button>
     </fieldset>
 
-<div class="success"><?= $success; ?></div>
+<div class="success"><?= $success ?></div>
     
     </form>
 
