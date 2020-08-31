@@ -7,16 +7,18 @@ session_start();
     
 
 
-if ($_COOKIE["remember"]) {
+if (isset($_COOKIE["remember"])) {
     $name = $_COOKIE["name"];
     $email = $_COOKIE["email"];
     $phone = $_COOKIE["phone"];
+    $remember = $_COOKIE["remember"];
 } else {
     $name = "";
     $email = "";
     $phone = "";
     $message = "";
     $subject = "";
+    $remember = "off";
 }
 
     $name_error = $email_error =$phone_error = " ";
@@ -97,11 +99,25 @@ if ($_COOKIE["remember"]) {
 
     }
 
-    if($_POST["remember"]) {
+
+
+    if (isset($_POST['remember'])) {
+        
+        $remember = $_POST['remember'];
+        
+     } else {
+         
+    $remember = "off";
+
+     }
+
+
+    if(isset($_POST["remember"])) {
         setcookie ("name" ,$name,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("email" ,$email,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("phone" ,$phone,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("subject" ,$subject,time()+ (10 * 365 * 24 * 60 * 60));
+        setcookie ("remember" ,$remember,time()+ (10 * 365 * 24 * 60 * 60));
     }
 
     save_data($email, $name, $subject, $message);
