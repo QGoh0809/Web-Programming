@@ -133,6 +133,7 @@ session_start();
         setcookie ('name' ,$name, $month);
         setcookie ("email" ,$email, $month);
         setcookie ("phone" ,$phone, $month);
+        setcookie ("remember" ,$remember, $month);
     } elseif (($_POST['remember']) == 'off' && ($_COOKIE['remember']) == 'off') {
         $past = time() - 100;
         if (isset($_COOKIE['name'])) {
