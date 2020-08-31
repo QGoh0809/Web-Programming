@@ -19,13 +19,6 @@ if (isset($_COOKIE["remember"])) {
     $message = "";
     $subject = "";
     $remember = "off";
-    setcookie ("name" ,$name,time() - 3600 , "/");
-    setcookie ("email" ,$email,time() - 3600, "/");
-    setcookie ("phone" ,$phone,time() - 3600, "/");
-    setcookie ("subject" ,$subject,time() - 3600, "/");
-    setcookie ("remember" ,$remember,time() - 3600, "/");
-
-
 }
 
     $name_error = $email_error =$phone_error = " ";
@@ -125,6 +118,13 @@ if (isset($_COOKIE["remember"])) {
         setcookie ("phone" ,$phone,time()+ (10 * 365 * 24 * 60 * 60), "/");
         setcookie ("subject" ,$subject,time()+ (10 * 365 * 24 * 60 * 60), "/");
         setcookie ("remember" ,$remember,time()+ (10 * 365 * 24 * 60 * 60), "/");
+    } else{
+        setcookie ("name" ,"",time() - 3600 , "/");
+        setcookie ("email" ,"",time() - 3600, "/");
+        setcookie ("phone" ,"",time() - 3600, "/");
+        setcookie ("subject" ,"",time() - 3600, "/");
+        setcookie ("remember" ,"",time() - 3600, "/");
+
     }
 
     save_data($email, $name, $subject, $message);
