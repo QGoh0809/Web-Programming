@@ -35,14 +35,14 @@
     </fieldset>
     
     <fieldset>
-    <input type="checkbox" name="remember" value="1" class="remember">  <span class="remember_span">Remember me</span> 
+    <div><input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["remember"])) { ?> checked <?php } ?> />
     </fieldset>
 
     <fieldset>
     <button name="submit" type="submit" id="contact-submit" data-submit="....sending">Submit</button>
     </fieldset>
 
-<div class="success"><?= $success ?></div>
+    <div class="success"><?= $success ?></div>
     
     </form>
 

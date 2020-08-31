@@ -54,11 +54,12 @@ if (isset($_COOKIE["remember"])) {
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     
-        $email = $email;
+        $email_error = "Did you mean to type this: {$email} ";  
 
     } else {
 
-        $email_error = "Did you mean to type this: {$email} ";  
+
+        $email = $email;
     }
 
     //
@@ -145,6 +146,7 @@ function save_data($email, $name, $subject, $message  )
       
     // closing the file 
     fclose($file); 
+    
     $success = "Message succesfully sent!";
 
     }
