@@ -35,7 +35,7 @@
     </fieldset>
     
     <fieldset>
-    <input type="checkbox" name="remember" value="<?= $remember ?>" class="remember">  <span class="remember_span">Remember me</span> 
+    <input type="checkbox" name="remember" value="1" class="remember">  <span class="remember_span">Remember me</span> 
     </fieldset>
 
     <fieldset>
