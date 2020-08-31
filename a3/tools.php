@@ -1,6 +1,6 @@
 <?php 
 
-//session_start();
+session_start();
 
     //define variables and set to empty values
 

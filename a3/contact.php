@@ -35,7 +35,7 @@
     </fieldset>
     
     <fieldset>
-    <div><input type="checkbox" name="remember" id="remember" checked="checked" value="yes" <?php if(isset($_COOKIE["remember"])) { ?> checked <?php } ?> />
+    <div><input type="checkbox" name="remember" id="remember" checked="checked" value="yes" <?php if(isset($_COOKIE["remember"])) { ?> checked <?php } ?> > <span class="remember_span">Remember me</span>
     </fieldset>
 
     <fieldset>
