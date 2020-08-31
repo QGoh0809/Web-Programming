@@ -35,14 +35,13 @@
     </fieldset>
     
     <fieldset>
-    <?php
-    if(isset($_COOKIE['remember'])) {
-    echo "<input type=\"checkbox\" id=\"remember\" name=\"remember\" checked=\"checked\">";
-    } else {
-    echo "<input type=\"checkbox\" id=\"remember\" name=\"remember\">";
-    }
-    ?>    
-    </fieldset>
+<?php
+if(isset($_COOKIE['remember'])) {
+    echo "<input type=\"checkbox\" id=\"remember\" name=\"remember\" value=\"yes\" checked=\"checked\">";
+} else {
+    echo "<input type=\"checkbox\" id=\"remember\" name=\"remember\" value=\"off\">";
+}
+?>    </fieldset>
 
     <fieldset>
     <button name="submit" type="submit" id="contact-submit" data-submit="....sending">Submit</button>

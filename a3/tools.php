@@ -128,12 +128,12 @@ session_start();
     //}
 
 
-    if($_POST['remember']) {
+    if(isset($_POST['remember'])) {
         $month = time() + (60 * 60 * 24 * 30);
         setcookie ('name' ,$name, $month);
         setcookie ("email" ,$email, $month);
         setcookie ("phone" ,$phone, $month);
-    } elseif (!isset($_POST['remember']) && (!isset($_COOKIE['remember']))) {
+    } elseif (($_POST['remember']) == 'off' && ($_COOKIE['remember']) == 'off') {
         $past = time() - 100;
         if (isset($_COOKIE['remember'])) {
             setcookie('remember', '', $past);
