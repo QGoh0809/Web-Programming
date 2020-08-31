@@ -101,17 +101,6 @@ session_start();
     }
 
 
-    if (isset($_POST['remember'])) {
-        
-        $remember = $_POST['remember'];
-        
-     } else {
-         
-    $remember = "off";
-
-     }
-
-
 //    if(isset($_POST["remember"])) {
  //       setcookie ("name" ,$name,time()+ (10 * 365 * 24 * 60 * 60), "/");
  //       setcookie ("email" ,$email,time()+ (10 * 365 * 24 * 60 * 60), "/");
