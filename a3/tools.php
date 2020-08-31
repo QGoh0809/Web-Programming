@@ -1,6 +1,6 @@
-<?php
+<?php 
 
-session_start();
+//session_start();
 
     //define variables and set to empty values
 
@@ -50,13 +50,13 @@ if (isset($_COOKIE["remember"])) {
 
     } else{
 
-
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     
         $email = $email;
-    }
+
+    } else {
 
         $email_error = "Did you mean to type this: {$email} ";  
     }
@@ -100,7 +100,6 @@ if (isset($_COOKIE["remember"])) {
     }
 
 
-
     if (isset($_POST['remember'])) {
         
         $remember = $_POST['remember'];
@@ -125,11 +124,11 @@ if (isset($_COOKIE["remember"])) {
     }
 
     
-
+    }
 
 
 function save_data($email, $name, $subject, $message  )
-{
+  {
 
     $array = array("{$email}, {$name}, {$subject}, {$message}") ;
                     
@@ -146,8 +145,17 @@ function save_data($email, $name, $subject, $message  )
       
     // closing the file 
     fclose($file); 
+    $success = "Message succesfully sent!";
 
-    $success = "Message succesfully sent!"
+    }
 
 
-}
+
+
+
+
+
+
+
+
+?>
