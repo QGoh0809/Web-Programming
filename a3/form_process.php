@@ -86,14 +86,6 @@
         setcookie ("subject" ,$subject,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("remember" ,$remember ,time()+ (10 * 365 * 24 * 60 * 60));
 
-    } else {
-        setcookie("name","");
-        setcookie("email","");
-        setcookeie("phone", "");
-        setcookeie("subject", "");
-        setcookeie("message", "");
-        setcookeie("remember", "");
-
     }
 
     save_data($email, $name, $subject, $message);
