@@ -134,7 +134,7 @@ session_start();
         setcookie ("email" ,$email, $month);
         setcookie ("phone" ,$phone, $month);
         setcookie ("remember" ,$remember, $month);
-    } elseif (($_POST['remember']) == 'off' && ($_COOKIE['remember']) == 'off') {
+    } elseif (!isset(($_POST['remember'])) && !isset(($_COOKIE['remember']))) {
         $past = time() - 100;
         if (isset($_COOKIE['name'])) {
             setcookie('name', '', $past);
