@@ -80,11 +80,11 @@
     }
 
     if(!empty($_POST["remember"])) {
-        setcookie ("name" ,$name,time() + (86400 * 30));
-        setcookie ("email" ,$email,time() + (86400 * 30));
-        setcookie ("phone" ,$phone,time() + (86400 * 30));
-        setcookie ("subject" ,$subject,time() + (86400 * 30));
-        setcookie ("remember" ,$remember ,time() + (86400 * 30));
+        setcookie ("name" ,$name,time()+ (10 * 365 * 24 * 60 * 60));
+        setcookie ("email" ,$email,time()+ (10 * 365 * 24 * 60 * 60));
+        setcookie ("phone" ,$phone,time()+ (10 * 365 * 24 * 60 * 60));
+        setcookie ("subject" ,$subject,time()+ (10 * 365 * 24 * 60 * 60));
+        setcookie ("remember" ,$remember ,time()+ (10 * 365 * 24 * 60 * 60));
 
     } else {
         setcookie("name","");
