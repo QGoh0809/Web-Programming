@@ -15,6 +15,8 @@ if ($_COOKIE["remember"]) {
     $name = "";
     $email = "";
     $phone = "";
+    $message = "";
+    $subject = "";
 }
 
     $name_error = $email_error =$phone_error = " ";
@@ -128,6 +130,8 @@ function save_data($email, $name, $subject, $message  )
       
     // closing the file 
     fclose($file); 
+
+    $success = "Message succesfully sent!"
 
 
 }
