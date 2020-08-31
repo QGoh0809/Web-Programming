@@ -7,7 +7,7 @@ session_start();
     
 
 
-if ($_COOKIE["remember"] == 1) {
+if ($_COOKIE["remember"] == true) {
 
     $name = $_COOKIE["name"];
     $email = $_COOKIE["email"];
@@ -69,7 +69,7 @@ if ($_COOKIE["remember"] == 1) {
 
         }else{
 
-            $subject = preg_replace('/[\x00-\x1F\x7F]/u', '', $subject);
+            $subject = preg_replace('/[\x00-\x1F\x7F]/u', '', $_POST["subject"]);
             $subject = $_POST["subject"]; 
 
         }
@@ -96,12 +96,12 @@ if ($_COOKIE["remember"] == 1) {
 
     }else{
     
-        $message = preg_replace('/[\x00-\x1F\x7F]/u', '', $message);
+        $message = preg_replace('/[\x00-\x1F\x7F]/u', '', $_POST["message"]);
         $message = $_POST["message"];
 
     }
 
-    if($_POST["remember"] == 1) {
+    if($_POST["remember"] == true) {
         setcookie ("name" ,$name,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("email" ,$email,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("phone" ,$phone,time()+ (10 * 365 * 24 * 60 * 60));
