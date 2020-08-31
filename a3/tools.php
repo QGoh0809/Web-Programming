@@ -4,22 +4,23 @@ session_start();
 
     //define variables and set to empty values
 
-    if (!empty($_COOKIE["name"]){
+    if (!empty($_COOKIE["name"])) {
         $name = $_COOKIE["name"];
     } else {
         $name = "";
     }
-    if (!empty($_COOKIE["email"]){
+
+    if (!empty($_COOKIE["email"])){
         $email = $_COOKIE["email"];
     } else {
         $email = "";
     }
-    if (!empty($_COOKIE["phone"]){
+    if (!empty($_COOKIE["phone"])){
         $phone = $_COOKIE["phone"];
     } else {
         $name = "";
     }
-    if (!empty($_COOKIE["remember"]){
+    if (!empty($_COOKIE["remember"])){
         $remember = $_COOKIE["remember"];
     } else {
         $remember = null;
