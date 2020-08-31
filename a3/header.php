@@ -5,19 +5,19 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.">
       <meta name="author" content="Quinn Goh">
-      <title>Assignment Two</title>
+      <title>Assignment Three</title>
       <!-- Keep wireframe.css for debugging, add your css to style.css -->
       <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
       <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
-      <script type="text/javascript" src="../a2/mapdata.js"></script>		
-      <script  type="text/javascript" src="../a2/worldmap.js"></script>
-      <script  type="text/javascript" src="../a3/essential.js"></script>
-      <script  type="text/javascript" src="../a3/script.js"></script>
-      <script  type="text/php" src="../a3/tools.php"></script>
-      <script src='../wireframe.js'></script>
+      <!-- Basic stylesheet -->
+     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <!-- Default Theme -->
+     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+     <!-- Include js plugin -->
+     <script src="owl-carousel/owl.carousel.js"></script>
+     <script> $(".owl-carousel").owlCarousel(); </script>
    </head>
 
-   </head>
    <body>
       <header id="nav" class="sticky-nav">
          <nav class="container">

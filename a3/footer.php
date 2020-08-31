@@ -17,4 +17,13 @@
          <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
          <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
       </footer>
+      <script type="text/javascript" src="../a2/mapdata.js"></script>		
+      <script  type="text/javascript" src="../a2/worldmap.js"></script>
+      <script  type="text/javascript" src="../a3/essential.js"></script>
+      <script  type="text/javascript" src="../a3/script.js"></script>
+      <script src="jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+      <script  type="text/php" src="../a3/tools.php"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+      <script src='../wireframe.js'></script>
    </body>
