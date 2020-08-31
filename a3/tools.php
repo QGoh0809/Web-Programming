@@ -3,11 +3,29 @@
 session_start();
 
     //define variables and set to empty values
+
+    if (!empty($_COOKIE["name"]){
+        $name = $_COOKIE["name"];
+    } else {
+        $name = "";
+    }
+    if (!empty($_COOKIE["email"]){
+        $email = $_COOKIE["email"];
+    } else {
+        $email = "";
+    }
+    if (!empty($_COOKIE["phone"]){
+        $phone = $_COOKIE["phone"];
+    } else {
+        $name = "";
+    }
+    if (!empty($_COOKIE["remember"]){
+        $remember = $_COOKIE["remember"];
+    } else {
+        $remember = null;
+    }
+    
     $name_error = $email_error =$phone_error = " ";
-    $name = $_COOKIE["name"];
-    $email = $_COOKIE["email"];
-    $phone = $_COOKIE["phone"];
-    $remember = $_COOKIE["remember"];
     $success = " ";
 
     //form is submited with POST method
