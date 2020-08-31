@@ -7,7 +7,7 @@ session_start();
     
 
 
-if (isset($_COOKIE["remember"] )) {
+if ($_COOKIE["remember"]) {
     $name = $_COOKIE["name"];
     $email = $_COOKIE["email"];
     $phone = $_COOKIE["phone"];
@@ -95,7 +95,7 @@ if (isset($_COOKIE["remember"] )) {
 
     }
 
-    if(isset($_POST["remember"])) {
+    if($_POST["remember"]) {
         setcookie ("name" ,$name,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("email" ,$email,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("phone" ,$phone,time()+ (10 * 365 * 24 * 60 * 60));
