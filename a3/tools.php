@@ -4,28 +4,25 @@ session_start();
 
     //define variables and set to empty values
 
-    if (!empty($_COOKIE["name"])) {
-        $name = $_COOKIE["name"];
-    } else {
-        $name = "";
-    }
-
-    if (!empty($_COOKIE["email"])){
-        $email = $_COOKIE["email"];
-    } else {
-        $email = "";
-    }
-    if (!empty($_COOKIE["phone"])){
-        $phone = $_COOKIE["phone"];
-    } else {
-        $name = "";
-    }
-    if (!empty($_COOKIE["remember"])){
-        $remember = $_COOKIE["remember"];
-    } else {
-        $remember = null;
-    }
     
+
+
+if ($_COOKIE["remember"] == 1) {
+
+    $name = $_COOKIE["name"];
+    $email = $_COOKIE["email"];
+    $phone = $_COOKIE["phone"];
+    $remember = $_COOKIE["remember"];
+
+} else {
+
+    $name = "";
+    $email = "";
+    $phone = "";
+    $remember = 0;
+
+}
+
     $name_error = $email_error =$phone_error = " ";
     $success = " ";
 
@@ -60,10 +57,10 @@ session_start();
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     
-        $email_error = "Did you mean: {$email} ";
+        $email = $email;
     }
 
-           
+        $email_error = "Did you mean to type this: {$email} ";  
     }
 
     //
@@ -71,6 +68,8 @@ session_start();
         $subject = " ";
 
         }else{
+
+            $subject = preg_replace('/[\x00-\x1F\x7F]/u', '', $subject);
             $subject = $_POST["subject"]; 
 
         }
@@ -96,11 +95,13 @@ session_start();
     $message = "";    
 
     }else{
-    $message = $_POST["message"];
+    
+        $message = preg_replace('/[\x00-\x1F\x7F]/u', '', $message);
+        $message = $_POST["message"];
 
     }
 
-    if(!empty($_POST["remember"])) {
+    if($_POST["remember"] == 1) {
         setcookie ("name" ,$name,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("email" ,$email,time()+ (10 * 365 * 24 * 60 * 60));
         setcookie ("phone" ,$phone,time()+ (10 * 365 * 24 * 60 * 60));
