@@ -865,6 +865,7 @@ textarea.input100 {
 
 position:absolute;
 padding-top: 200 px;
+padding-bottom: 200 px;
 top: 80%;
 left: 50%;
 transform: translate(-50%, -50%);
