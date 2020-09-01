@@ -3,7 +3,7 @@
    <?php 
      include 'header.php'; 
    ?>
-<header class="hero-overlay">
+
 <div class="centered-container-2">
 
 <h1> Letters </h1>
@@ -18,7 +18,6 @@
             </div> 
 
 </div>
-</header>
 
 
 <?php 
