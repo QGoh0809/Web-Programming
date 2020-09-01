@@ -122,15 +122,12 @@ session_start();
         setcookie ("email" ,$email, $month);
         setcookie ("phone" ,$phone, $month);
         setcookie ("remember" ,$remember, $month);
-    } elseif ( !isset($_POST['remember']) && !isset($_COOKIE['remember'])  ) {
+    } if ( !isset($_POST['remember']) && !isset($_COOKIE['remember'])  ) {
         $past = time() - 100;
-        }if (isset($_COOKIE['name'])) {
-            setcookie('name', '', $past);
-        }elseif (isset($_COOKIE['email'])) {
-            setcookie('email', '', $past);
-        }elseif (isset($_COOKIE['phone'])) {
+        
+        setcookie('name', '', $past);
+        setcookie('email', '', $past);
         setcookie('phone', '', $past);
-        }elseif (isset($_COOKIE['remember'])) {
         setcookie('remember', '', $past);
     }
 
