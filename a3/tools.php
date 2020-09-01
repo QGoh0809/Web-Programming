@@ -130,7 +130,7 @@ session_start();
         setcookie ("remember" ,$remember, $month);
     } elseif ( !isset($_POST['remember']) && !isset($_COOKIE['remember'])  ) {
         $past = time() - 100;
-        }elseif (isset($_COOKIE['name'])) {
+        }if (isset($_COOKIE['name'])) {
             setcookie('name', '', $past);
         }elseif (isset($_COOKIE['email'])) {
             setcookie('email', '', $past);
