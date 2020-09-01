@@ -31,7 +31,7 @@ session_start();
     $remember = "";
 
     //form is submited with POST method
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if(empty($_POST["name"]))      
@@ -43,7 +43,7 @@ session_start();
         $name = $_POST["name"];
 
     
-    }else{
+    }else {
         $name_error = "Incorrect characters";
             
         }
@@ -53,17 +53,15 @@ session_start();
 
     $email_error = "email is required" ;
 
-
     } else{
 
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
 
-    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    } if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     
         $email_error = "Did you mean to type this: {$email} ";  
 
     } else {
-
 
         $email = $email;
     }
@@ -106,6 +104,7 @@ session_start();
 
     }
 
+    }
 
 //    if(isset($_POST["remember"])) {
  //       setcookie ("name" ,$name,time()+ (10 * 365 * 24 * 60 * 60), "/");
@@ -145,9 +144,6 @@ session_start();
     }
 
     
-    
-
-
 function save_data($email, $name, $subject, $message  )
   {
 
