@@ -132,10 +132,12 @@ session_start();
         $past = time() - 100;
         }if (isset($_COOKIE['name'])) {
             setcookie('name', '', $past);
-        } elseif (isset($_COOKIE['email'])) {
+        } if (isset($_COOKIE['email'])) {
             setcookie('email', '', $past);
-        } elseif (isset($_COOKIE['phone'])) {
+        } if (isset($_COOKIE['phone'])) {
         setcookie('phone', '', $past);
+        } if (isset($_COOKIE['remember'])) {
+        setcookie('remember', '', $past);
     }
 
     save_data($email, $name, $subject, $message);
