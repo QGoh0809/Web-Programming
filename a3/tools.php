@@ -145,7 +145,7 @@ session_start();
     }
 
     
-    }
+    
 
 
 function save_data($email, $name, $subject, $message  )
