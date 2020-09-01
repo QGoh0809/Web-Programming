@@ -98,37 +98,22 @@ session_start();
 
     }
 
-
-
-//    if(isset($_POST["remember"])) {
- //       setcookie ("name" ,$name,time()+ (10 * 365 * 24 * 60 * 60), "/");
- //       setcookie ("email" ,$email,time()+ (10 * 365 * 24 * 60 * 60), "/");
-//setcookie ("phone" ,$phone,time()+ (10 * 365 * 24 * 60 * 60), "/");
-  //      setcookie ("subject" ,$subject,time()+ (10 * 365 * 24 * 60 * 60), "/");
-  //      setcookie ("remember" ,$remember,time()+ (10 * 365 * 24 * 60 * 60), "/");
- //   } else{
- //       setcookie ("name" ,$name,time() - 3600 , "/");
- //       setcookie ("email" ,$email,time() - 3600, "/");
-//setcookie ("phone" ,$phone,time() - 3600, "/");
-//setcookie ("subject" ,$subject,time() - 3600, "/");
-//setcookie ("remember" ,$remember,time() - 3600, "/");
-//
-    //}
-
-
     if(isset($_POST['remember'])) {
         $month = time() + (60 * 60 * 24 * 30);
         setcookie ('name' ,$name, $month);
         setcookie ("email" ,$email, $month);
         setcookie ("phone" ,$phone, $month);
         setcookie ("remember" ,$_POST['remember'], $month);
-    } if ( !isset($_POST['remember']) && !isset($_COOKIE['remember'])  ) {
-        $past = time() - 100;
+
+
+    }elseif (!isset($_POST['remember']) && (!isset($_COOKIE['remember']))) {
+        
+        $past = time() - 3600;
         
         setcookie('name', '', $past);
         setcookie('email', '', $past);
         setcookie('phone', '', $past);
-        setcookie('remember', '', $past);
+        setcookie('remember', 'off', $past);
     }
 
     save_data($email, $name, $subject, $message);
