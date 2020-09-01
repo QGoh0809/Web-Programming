@@ -38,5 +38,7 @@
 	</section>
 
    <?php 
-     include 'header.php'; 
+     include 'footer.php'; 
    ?>
+
+   </html>

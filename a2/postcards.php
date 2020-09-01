@@ -101,3 +101,7 @@
       </footer>
    </body>
 </html>
+
+<?php 
+     include 'footer.php'; 
+   ?>

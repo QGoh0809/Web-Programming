@@ -60,3 +60,5 @@ if(isset($_COOKIE['remember'])) {
 <?php 
      include 'footer.php'; 
    ?>
+
+</html>
