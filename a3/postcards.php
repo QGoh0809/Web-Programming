@@ -5,8 +5,9 @@
    ?>
 
 <div class="centered-container-2">
-
 <h1> Letters </h1>
+</div>
+<div class="wrapper">
                   <div class="mail">
                      <div class="cover">
                         <div class="letter">
@@ -16,8 +17,6 @@
                      </div>
                   </div>
             </div> 
-
-</div>
 
 
 <?php 
