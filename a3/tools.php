@@ -130,13 +130,13 @@ session_start();
         setcookie ("remember" ,$remember, $month);
     } elseif ( !isset($_POST['remember']) && !isset($_COOKIE['remember'])  ) {
         $past = time() - 100;
-        }if (isset($_COOKIE['name'])) {
+        }elseif (isset($_COOKIE['name'])) {
             setcookie('name', '', $past);
-        } if (isset($_COOKIE['email'])) {
+        }elseif (isset($_COOKIE['email'])) {
             setcookie('email', '', $past);
-        } if (isset($_COOKIE['phone'])) {
+        }elseif (isset($_COOKIE['phone'])) {
         setcookie('phone', '', $past);
-        } if (isset($_COOKIE['remember'])) {
+        }elseif (isset($_COOKIE['remember'])) {
         setcookie('remember', '', $past);
     }
 
