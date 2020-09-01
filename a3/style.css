@@ -505,11 +505,10 @@
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
-  align-content: center;
+  left: 50%;  
   padding-top: 300px;
   padding-bottom: 300px;
   flex: 1;
-  text-align: center;
 }
 
 .footer {
