@@ -59,11 +59,11 @@ session_start();
 
     } if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     
-        $email_error = "Did you mean to type this: {$email} ";  
+        $email = $email;
 
     } else {
 
-        $email = $email;
+        $email_error = "Did you mean to type this: {$email} ";
     }
 
     //
@@ -136,9 +136,7 @@ session_start();
             setcookie('email', '', $past);
         }elseif (isset($_COOKIE['phone'])) {
         setcookie('phone', '', $past);
-        }elseif (isset($_COOKIE['remember'])) {
-        setcookie('remember', '', $past);
-    }
+        }
 
     save_data($email, $name, $subject, $message);
 
