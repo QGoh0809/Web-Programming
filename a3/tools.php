@@ -137,11 +137,13 @@ session_start();
         } elseif (isset($_COOKIE['phone'])) {
         setcookie('phone', '', $past);
     }
-    }
+    
 
     save_data($email, $name, $subject, $message);
 
     }
+
+}
 
     
 function save_data($email, $name, $subject, $message  )
