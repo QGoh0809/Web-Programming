@@ -505,9 +505,7 @@
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-content: center;
   padding-top: 300px;
   padding-bottom: 300px;
   flex: 1;
