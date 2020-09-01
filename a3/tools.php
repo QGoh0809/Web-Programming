@@ -136,7 +136,9 @@ session_start();
             setcookie('email', '', $past);
         }elseif (isset($_COOKIE['phone'])) {
         setcookie('phone', '', $past);
-        }
+        }else (isset($_COOKIE['remember'])) {
+        setcookie('remember', '', $past);
+    }
 
     save_data($email, $name, $subject, $message);
 
