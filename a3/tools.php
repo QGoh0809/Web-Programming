@@ -106,14 +106,17 @@ session_start();
         setcookie ("remember" ,$_POST['remember'], $month);
 
 
-    }elseif (!isset($_POST['remember']) && (!isset($_COOKIE['remember']))) {
-        
+    }elseif (!isset($_POST['remember'])) {
         $past = time() - 3600;
-        
-        setcookie('name', '', $past);
-        setcookie('email', '', $past);
-        setcookie('phone', '', $past);
-        setcookie('remember', 'off', $past);
+        if (!isset($_COOKIE['remember'])){
+            setcookie('remember', '', $past);
+        }
+        if (!isset($_COOKIE['name'])){
+            setcookie('name', '', $past);
+        }
+        if (!isset($_COOKIE['email'])){
+            setcookie('email', '', $past);
+        } 
     }
 
     save_data($email, $name, $subject, $message);
