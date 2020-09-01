@@ -34,9 +34,10 @@
     </fieldset>
     
     <fieldset>
+    Remember Me:&nbsp;
 <?php
 if(isset($_COOKIE['remember'])) {
-   echo "<input type=\"checkbox\" id=\"remember\" name=\"remember\" checked=\"checked\"><span class=\"remember-me-text\"> Remember Me</span>";
+   echo "<input type=\"checkbox\" id=\"remember\" name=\"remember\" checked=\"checked\">";
 } else {
     echo "<input type=\"checkbox\" id=\"remember\" name=\"remember\" > <span class=\"remember-me-text\"> Remember Me</span>";
 }
