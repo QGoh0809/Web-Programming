@@ -3,31 +3,13 @@
 session_start();
 
     //define variables and set to empty values
-
-
-
-
-//if (isset($_COOKIE["remember"])) {
-//    $name = $_COOKIE["name"];
-//    $email = $_COOKIE["email"];
- //   $phone = $_COOKIE["phone"];
- //   $remember = $_COOKIE["remember"];
-//} else {
-//    $name = "";
-//    $email = "";
-//    $phone = "";
-//    $message = "";
-//    $subject = "";
- //   $remember = "off";
-//}
-
     $name_error = $email_error = $phone_error = " ";
     $success = "";
 
     //form is submited with POST method
     if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-
+//Make required and filter all submissions
     if(empty($_POST["name"]))      
     {
         $name_error = "Name is required ";
@@ -42,7 +24,7 @@ session_start();
             
         }
         
-    //email Required       
+          
     if(empty($_POST["email"])){
 
     $email_error = "email is required" ;
@@ -96,7 +78,7 @@ session_start();
         $message = preg_replace('/[\x00-\x1F\x7F]/u', '', $_POST["message"]);
 
     }
-
+//building cookie
     if(isset($_POST['remember'])) {
         $month = time() + (60 * 60 * 24 * 30);
         setcookie ('name' ,$name, $month);
@@ -130,7 +112,7 @@ function save_data($email, $name, $subject, $message  )
     $array = array("{$email}, {$name}, {$subject}, {$message}") ;
                     
   
-    // opening the file "data.csv" for writing 
+    // opening the file "mail.csv" for writing 
     $file = fopen("../a3/mail.csv","w"); 
       
     // formatting each row of data in CSV format  
