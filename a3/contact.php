@@ -26,11 +26,11 @@
     </fieldset>
     
     <fieldset>
-    <textarea placeholder="Type your Subject here..." tabindex="4"  type="text" name="subject"  value="<?= $subject ?>" ></textarea>
+    <textarea placeholder="Type your Subject here..." tabindex="4"  type="text" name="subject"  value="<?= $subject ?>" ></textarea required>
     </fieldset>
     
     <fieldset>
-    <textarea placeholder="Type your Message here..." tabindex="5"  type="text" name="message"  value="<?= $message ?>" ></textarea>
+    <textarea placeholder="Type your Message here..." tabindex="5"  type="text" name="message"  value="<?= $message ?>" ></textarea required>
     </fieldset>
     
     <fieldset>

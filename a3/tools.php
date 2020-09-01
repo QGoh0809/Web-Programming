@@ -94,7 +94,6 @@ session_start();
     }else{
     
         $message = preg_replace('/[\x00-\x1F\x7F]/u', '', $_POST["message"]);
-        $message = $_POST["message"];
 
     }
 
@@ -104,19 +103,19 @@ session_start();
         setcookie ("email" ,$email, $month);
         setcookie ("phone" ,$phone, $month);
         setcookie ("remember" ,$_POST['remember'], $month);
-
-
     }elseif (!isset($_POST['remember'])) {
         $past = time() - 3600;
-        if (!isset($_COOKIE['remember'])){
-            setcookie('remember', '', $past);
-        }
+
         if (!isset($_COOKIE['name'])){
             setcookie('name', '', $past);
         }
         if (!isset($_COOKIE['email'])){
             setcookie('email', '', $past);
         } 
+    }
+
+    if (!isset($_COOKIE['remember'])){
+        setcookie('remember', '', $past);
     }
 
     save_data($email, $name, $subject, $message);
@@ -143,6 +142,8 @@ function save_data($email, $name, $subject, $message  )
       
     // closing the file 
     fclose($file); 
+
+
 
     $success = "Message succesfully sent!";
 
