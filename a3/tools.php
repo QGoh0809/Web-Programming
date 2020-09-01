@@ -22,7 +22,13 @@ session_start();
 //}
 
     $name_error = $email_error =$phone_error = " ";
-    $success = " ";
+    $success = "";
+    $name = "";
+    $email = "";
+    $phone = "";
+    $message = "";
+    $subject = "";
+    $remember = "";
 
     //form is submited with POST method
     if($_SERVER["REQUEST_METHOD"] == "POST"){
