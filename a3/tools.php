@@ -121,7 +121,7 @@ session_start();
         setcookie ('name' ,$name, $month);
         setcookie ("email" ,$email, $month);
         setcookie ("phone" ,$phone, $month);
-        setcookie ("remember" ,$remember, $month);
+        setcookie ("remember" ,$_POST['remember'], $month);
     } if ( !isset($_POST['remember']) && !isset($_COOKIE['remember'])  ) {
         $past = time() - 100;
         
