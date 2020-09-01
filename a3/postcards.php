@@ -5,7 +5,7 @@
    ?>
 
 <div class="centered-container-2">
-<h1> Letters </h1>
+<h1> Letters & Postcards </h1>
 </div>
 <div class="wrapper">
                   <div class="mail">

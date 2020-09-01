@@ -371,7 +371,7 @@
 
 
   .centered-container-2 h1 {
-
+    color: #0000;
     text-align: center;
   }
 
@@ -507,8 +507,9 @@
   -ms-flex: 1;
   left: 50%;  
   padding-top: 300px;
-  padding-bottom: 300px;
+  padding-bottom: 400px;
   flex: 1;
+  text-align: center;
 }
 
 .footer {
