@@ -4,8 +4,7 @@
      include 'header.php'; 
    ?>
 
-<section class="feature-section-2">
-            <div class="flex-container container">
+            <div class="center-container container">
 
 <form id ="contact" action="<?= $_SERVER['PHP_SELF'];  ?> "  method="POST">
     <h3>    Get in touch    </h3>
@@ -37,9 +36,9 @@
     <fieldset>
 <?php
 if(isset($_COOKIE['remember'])) {
-    echo "<input type=\"checkbox\" id=\"remember\" value=\"<?= $remember ?>\" name=\"remember\" checked=\"checked\"> <span class=\"remember-me-text\"> Remember Me</span>";
+    echo "<input type=\"checkbox\" id=\"remember\" name=\"remember\" checked=\"checked\"> <span class=\"remember-me-text\"> Remember Me</span>";
 } else {
-    echo "<input type=\"checkbox\" value=\"<?= $remember ?>\" id=\"remember\" name=\"remember\" > <span class=\"remember-me-text\"> Remember Me</span>";
+    echo "<input type=\"checkbox\" id=\"remember\" name=\"remember\" > <span class=\"remember-me-text\"> Remember Me</span>";
 }
 ?>    </fieldset>
 
@@ -52,8 +51,7 @@ if(isset($_COOKIE['remember'])) {
     </form>
 
 
-</section>
-
+</div>
 
 
 

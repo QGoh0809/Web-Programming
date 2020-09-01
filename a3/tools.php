@@ -21,7 +21,7 @@ session_start();
  //   $remember = "off";
 //}
 
-    $name_error = $email_error =$phone_error = " ";
+    $name_error = $email_error = $phone_error = " ";
     $success = "";
     $name = "";
     $email = "";
